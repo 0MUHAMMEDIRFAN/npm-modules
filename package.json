@@ -1,0 +1,11 @@
+{
+  "name": "my-npm-modules",
+  "version": "1.0.1",
+  "description": "testing this npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "muhammedirfan",
+  "license": "ISC"
+}
