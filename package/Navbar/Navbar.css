@@ -1,0 +1,166 @@
+.navbar .scrolled {
+    background: rgba(0, 0, 0, 0.2) !important;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: calc(1-2);
+}
+
+.navbar .blur {
+    border-bottom: solid 1px #000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+.navbar> :not(:last-child) {
+    z-index: 10;
+}
+
+.navbar {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    /* max-width: 1540px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-inline: 20px;
+}
+
+.navbar #logo{
+    transition: all ease .4s;
+}
+.navbar .navLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navLinks h4 {
+    padding: 15px;
+    cursor: pointer;
+    /* color: ; */
+    transition: all ease 0.2s;
+}
+
+.navbar .navLinks h4::selection {
+    display: none;
+}
+
+.navbar .menuBtn {
+
+    display: none;
+}
+
+.menuBtn>span,
+.menuBtn>span::before,
+.menuBtn>span::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
+}
+
+.menuBtn>span::before {
+    content: "";
+    top: -8px;
+}
+
+.menuBtn>span::after {
+    content: "";
+    top: 8px;
+
+}
+
+.x::after,
+.x::before {
+    top: 0px !important;
+}
+
+.x {
+    transform: rotate(45deg);
+}
+
+.x::after {
+    transform: rotate(90deg);
+}
+
+.navbar .navLinks h4:hover {
+    color: #979797;
+    transform: scaleX(110%);
+}
+
+.navbar .curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100000px;
+}
+
+.navbar .none {
+    display: none;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .navbar .menuBtn {
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        right: 20px;
+        top: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 2000;
+    }
+
+    .navbar .navLinks {
+        background: rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to right bottom, rgba(20, 20, 20, 0.2), rgba(65, 65, 65, 0.2), rgba(22, 22, 22, 0.2));
+        border: solid 1px #000;
+        width: 170px;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 1em;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+        z-index: 2000;
+    }
+
+    .navbar .hide {
+        visibility: none;
+        transition: all 0.4s ease;
+        width: 0px;
+        height: 0px;
+    }
+
+    .navbar .navLinks a {
+        width: 100%;
+    }
+    .navbar .navLinks h4 {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar .navLinks a:not(:first-child) {
+        border-top: solid 1px #000;
+    }
+
+}

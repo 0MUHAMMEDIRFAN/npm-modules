@@ -1,3 +1,6 @@
+import Navbar from "./Navbar/Navbar"
+import './index.css';
+
 function print(data) {
     if (data) {
         return (data)
@@ -6,4 +9,4 @@ function print(data) {
     }
 }
 
-module.exports = {print}
+export { print, Navbar }
