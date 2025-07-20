@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Input } from '../index.js';
+import { Button, Input } from './index.js';
 
 const Demo = () => {
   const [formData, setFormData] = useState({
