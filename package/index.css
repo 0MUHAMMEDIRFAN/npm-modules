@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+/* Import component styles */
+@import './Button/Button.css';
+@import './Input/Input.css';
+@import './Navbar/Navbar.css';
+
 body {
     margin: 100px;
 }

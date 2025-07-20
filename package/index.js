@@ -1,4 +1,6 @@
 import Navbar from "./Navbar/Navbar"
+import Button from "./Button/Button"
+import Input from "./Input/Input"
 import './index.css';
 
 function print(data) {
@@ -9,4 +11,4 @@ function print(data) {
     }
 }
 
-export { print, Navbar }
+export { print, Navbar, Button, Input }

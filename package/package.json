@@ -1,18 +1,48 @@
 {
-  "name": "my-npm-modules",
+  "name": "zero-ui-kit",
   "version": "1.0.1",
-  "description": "testing this npm module",
+  "description": "A modern React UI component library with Button, Input, and other essential components",
   "main": "index.js",
+  "module": "index.js",
+  "files": [
+    "index.js",
+    "index.css",
+    "Button/",
+    "Input/",
+    "Navbar/",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "zero-ui",
+    "zero-ui-kit",
+    "button",
+    "input"
+  ],
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "npm run build"
   },
   "author": "muhammedirfan",
-  "license": "ISC",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.14",
     "postcss": "^8.5.3",
-    "react": "^19.0.0",
     "react-router-dom": "^7.3.0",
     "tailwindcss": "^4.0.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0MUHAMMEDIRFAN/npm-modules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0MUHAMMEDIRFAN/npm-modules/issues"
+  },
+  "homepage": "https://github.com/0MUHAMMEDIRFAN/npm-modules#readme"
 }
